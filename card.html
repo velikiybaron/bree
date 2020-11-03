@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+</head>
+<body>
+
+<header class="header">
+  <div class="header__container">
+      <div class="header__body">
+          <a href="index.html" class="logo"><img src="images/logo.jpg" alt=""></a>
+          <nav class="menu">
+              <ul class="menu__list-1">
+                  <li><a href="index.html">Footwear</a></li>
+                  <li><a href="brand.html">Brands</a></li>
+                  <li><a href="clear.html">Clearance</a></li>
+              </ul>
+              <ul class="menu__list-2">
+                  <li><a class="search" href="#"><i class="fa fa-search"></i><p>Search</p></a></li>
+                  <li><a class="cart" href="#"><i class="fa fa-shopping-bag"></i><p>Cart(<span value="0">0</span>)</p></a></li>
+                  <li><a href="#"><i class="fa fa-user"></i><p>Sign in</p></a></li>
+              </ul>
+          </nav>
+          <div class="burger__menu">
+              <span></span>
+          </div>
+          <div class="payment__cart">
+              <h1>Informations</h1>
+              <h4>Personnal informations</h4>
+              <div class="burger__menu2">
+                <span></span>
+            </div>
+              <form action="">
+                  <select class="form-control" type="text">
+                  <option value="USA">USA</option>
+                  <option value="UK">UK</option>
+                  <option value="RUSSIA">RUSSIA</option>
+                  <option value="UZBEKISTAN">UZBEKISTAN</option>
+              </select>
+            <div class="row">
+                <div class="col-lg-6">
+                    <input type="text" placeholder="First name">
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="Second name">
+                </div>
+                <div class="col-lg-12">
+                    <input type="text" class="adress" placeholder="Adress">
+                </div>
+                <div class="col-lg-6">
+                    <input type="number" placeholder="Postal code">
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="City">
+                </div>
+                <div class="col-lg-6">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="col-lg-6">
+                    <input type="number" placeholder="Phone">
+                </div>
+                <div class="col-lg-12">
+                    <h4>NOTES</h4>
+                    <textarea class="note" placeholder="Note"></textarea>
+                </div>
+            </div>
+            
+             <div class="your-cart">
+                 <h4>YOUR CART</h4>
+                 <div class="line"></div>
+                 <div class="product">
+                     <div class="pies">
+                         <div class="value-button" id="increase" onclick="increaseValue()">+</div>
+                         <input type="number" id="number" value="0">
+                         <div class="value-button" id="decrease" onclick="decreaseValue()">-</div>
+                     </div>
+                     <div class="image">
+                         <img width="100%" src="images/product/ex-7.png" alt="">
+                     </div>
+                     <div class="product__text">
+                         <h4>Comme des Garçons Play</h4>
+                         <p>Rod Laver Vintage - exclusive</p>
+                     </div>
+                     <div class="size__product">
+                         <label>SIZE <input type="number" min="7.5" max="11.5" value="7.5"></label>
+                     </div>
+                     <div class="price">
+                         <span>$ 105.00</span>
+                     </div>
+                 </div>
+             </div>
+             
+              </form>
+              
+          </div>
+          <div class="paymnet-back"></div>
+      </div>
+      <div class="search_body">
+        <div class="exit"><i class="fa fa-times-circle-o"></i></div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div class="search-place">
+                          <form action="">
+                              <input placeholder="Search" type="search">
+                              <button type="submit"><i class="fa fa-search"></i></button>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="col-lg-12">
+                      <div class="search-items">
+                          <div class="row">
+                              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                <div class="blocka">
+                                    <a class="shoes-a" href="card.html">
+                                        <div class="shoes">
+                                            <div class="shoes__img">
+                                                <img src="images/product/pro-1.png" alt="">
+                                            </div>
+                                            <h5>Supreme x Nike SB</h5>
+                                            <p>Tennis Classic</p>
+                                            <p class="price">$120.00<del>$160.00</del></p>
+                                        </div>
+                                    </a>
+                                    <div class="to__shop">
+                                        <button class="like"><i class="fa fa-heart"></i></button>
+                                        <button class="to-cart"><i class="fa fa-shopping-bag"></i></button>
+                                    </div>
+                                    
+                                </div>
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                <div class="blocka">
+                                    <a class="shoes-a" href="card.html">
+                                        <div class="shoes">
+                                            <div class="shoes__img">
+                                                <img src="images/product/pro-1.png" alt="">
+                                            </div>
+                                            <h5>Supreme x Nike SB</h5>
+                                            <p>Tennis Classic</p>
+                                            <p class="price">$120.00<del>$160.00</del></p>
+                                        </div>
+                                    </a>
+                                    <div class="to__shop">
+                                        <button class="like"><i class="fa fa-heart"></i></button>
+                                        <button class="to-cart"><i class="fa fa-shopping-bag"></i></button>
+                                    </div>
+                                    
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+<section class="card">
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-8 d-flex justify-content-center align-content-center">
+                <div class="card-pro">
+                        <img src="images/product/car-pro.png" alt="">
+                </div>
+        </div>
+        <div class="col-lg-4">
+                <div class="card-text">
+                    <button class="like"><i class="fa fa-heart-o"></i></button>
+                    <h3>Nike</h3>
+                    <h1>AIR MAX TAVAS SD</h1>
+                    <p class="price">$ 160.00</p>
+                    <p class="card-in-span">Colors - <span>Black/Pink Pow/Tour Yellow/White</span></p>
+                    <div class="img-block">
+                        <div class="img-content">
+                            <a href="images/product/car-pro.png"><img src="images/product/car-pro.png" alt=""></a>
+                            
+                        </div>
+                        <div class="img-content">
+                            <a href="images/product/car-pro копия.png"><img src="images/product/car-pro копия.png" alt=""></a>
+                            
+                        </div>
+                    </div>
+                    <p class="size">Size charts</p>
+                    <div class="size-to-card">
+                        <select>
+                            <option>41</option>
+                            <option>42</option>
+                            <option>43</option>
+                            <option>44</option>
+                            <option>45</option>
+                        </select>
+                        <button class="to-card">ADD TO CART</button>
+                    </div>
+                </div>
+        </div>  
+        </div>
+        
+    </div>
+</section>
+<section class="owl-carousel section-2">
+    <div class="modern">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="modern-text">
+                            <h1>CLASSIC CUSHIONING. MODERN COMFORT.</h1>
+                            <p>The Nike Air Max Tavas SD Men's Shoe recalls the profile of the iconic running original with
+                                a Max Air unit in the heel and multi-surface Waffle outsole. A lightweight upper and
+                                gradient detail offer a comfortable fit and dynamic look.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="modern">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="modern-text">
+                            <h1>CLASSIC CUSHIONING. MODERN COMFORT.</h1>
+                            <p>The Nike Air Max Tavas SD Men's Shoe recalls the profile of the iconic running original with
+                                a Max Air unit in the heel and multi-surface Waffle outsole. A lightweight upper and
+                                gradient detail offer a comfortable fit and dynamic look.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="modern">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="modern-text">
+                            <h1>CLASSIC CUSHIONING. MODERN COMFORT.</h1>
+                            <p>The Nike Air Max Tavas SD Men's Shoe recalls the profile of the iconic running original with
+                                a Max Air unit in the heel and multi-surface Waffle outsole. A lightweight upper and
+                                gradient detail offer a comfortable fit and dynamic look.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</section>
+<section class="card-info">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-md-6 col-sm-12 col-12">
+                <div class="info__text">
+                    <h5>Story</h5>
+                    <h1>NIKE AIR MAX ORIGINS</h1>
+                    <p>Nike's revolutionary Air-Sole unit made its way into Nike footwear in the late '70s. In 1987, the Nike Air Max 1 debuted with visible air in its heel, allowing fans more than just the feel of Air-Sole comfort</p>
+                    <h3>BENEFITS</h3>
+                    <h2>Layered textile/synthetic upper </h2>
+                    <p class="for_to">for lightweight durability and comfort </p>
+                    <h2>Injected Phylon midsole doubles </h2>
+                    <p class="for_to">Outsole to reduce the overall weight of the shoe </p>
+                    <h2>Max Air heel unit </h2>
+                    <p class="for_to">delivers maximum lightweight cushioning </p>
+                    <h2>Rubber Waffle outsole </h2>
+                    <p class="for_to">Durable, multi-surface traction</p>
+                </div>
+            </div>
+            <div class="col-xl-5 col-2-info">
+                <div class="info__img">
+                    <img src="images/info-bg.png" alt="">
+                </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-sm-12 col-12">
+                <div class="info__card">
+                    <h2>Nike</h2>
+                    <p>Air max Tavas SD</p>
+                    <h3>Black/Pink Pow/Tour Yellow/White </h3>
+                    <img width="100%" src="images/product/car-pro.png" alt="">
+                    <div class="card-from">
+                        <p>En stock</p>
+                        <p class="price">$160.00</p>
+                    </div>
+                    <div class="size-to-card">
+                        <select>
+                            <option>41</option>
+                            <option>42</option>
+                            <option>43</option>
+                            <option>44</option>
+                            <option>45</option>
+                        </select>
+                        <button>ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="social">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="socila__text">
+                    <h3>SOCIAL</h3>
+                    <h1>#NIKEAIRMAX</h1>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                <div class="airmax-image">
+                    <img width="100%" src="images/product/air-1.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                <div class="airmax-image">
+                    <img width="100%" src="images/product/air-2.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                <div class="airmax-image">
+                    <img width="100%" src="images/product/air-3.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 col-6">
+                <div class="airmax-image">
+                    <img width="100%" src="images/product/air-4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-1 col-md-1">
+                <img src="../images/logo.jpg" alt="">
+            </div>
+            <div class="col-lg-5 col-md-5">
+                <div class="footer__menu">
+                    <div class="footer__menu-left">
+                        <ul>
+                            <li><a href="#">Footwear</a></li>
+                            <li><a href="#">clothing</a></li>
+                            <li><a href="#">accessories</a></li>
+                            <li><a href="#">brands</a></li>
+                            <li><a href="#">clearance</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-left">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Store locator</a></li>
+                            <li><a href="#">Press room</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-left">
+                        <ul>
+                            <li><a href="#">Website Terms</a></li>
+                            <li><a href="#">Select Country</a></li>
+                            <li><a href="#">Source Code</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="footer__rigth">
+                    <div class="logos">
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                    </div>
+                    <input type="text" placeholder="Suscribe our newsletter...">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="js/modernizr.custom.17475.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $('.big-img').elevateZoom()
+    </script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+.shirt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.shirt2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.ex-row {
+  background: url(../images/bg_pattern.png) left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.shirt__text2 {
+  text-align: center;
+  height: 487px;
+  padding-top: 150px;
+  position: absolute;
+  right: 0;
+}
+
+.shirt__text2 h1 {
+  font-family: "DIN Next LT Pro - Medium Cond";
+  color: #333333;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.shirt__text2 p {
+  font-family: Roboto;
+  color: #666666;
+}
+
+.shirt__text2 .price {
+  color: #333333;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  font-size: 20px;
+}
+
+.shirt__rigth2 {
+  position: absolute;
+  width: 100%;
+  left: -60%;
+  border: 10px solid #f2f9fd;
+}
+
+.shirt__rigth2 img {
+  width: 100%;
+}
+
+.shirt__text {
+  text-align: center;
+  height: 487px;
+  padding-top: 150px;
+  position: absolute;
+}
+
+.shirt__text h1 {
+  font-family: "DIN Next LT Pro - Medium Cond";
+  color: #333333;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.shirt__text p {
+  font-family: Roboto;
+  color: #666666;
+}
+
+.shirt__text .price {
+  color: #333333;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  font-size: 20px;
+}
+
+.shirt__rigth {
+  position: absolute;
+  width: 100%;
+  vertical-align: middle;
+  right: -60%;
+  overflow: hidden;
+  border: 10px solid #f2f9fd;
+}
+
+.shirt__rigth img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+
+.ex__block {
+  text-align: center;
+  background-color: #f2f9fd;
+  padding: 122px 14px;
+  height: 530px;
+}
+
+.ex__block .shoes__img {
+  height: 241px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.ex__block .shoes__img img {
+  width: 100%;
+}
+
+.ex__block h5 {
+  font-size: 25px;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  text-transform: uppercase;
+  margin-top: 35px;
+  margin-bottom: 13px;
+}
+
+.ex__block p {
+  font-family: Roboto;
+  color: #666666;
+  margin-bottom: 25px;
+}
+
+.ex__block .price {
+  font-size: 18px;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  color: #333333;
+}
+
+.shirt-3 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.shirt-3 .shirt__text {
+  position: unset;
+  text-align: center;
+  width: 100%;
+}
+
+.shirt-3 .shirt__img {
+  width: 100%;
+}
+
+.shirt-3 .shirt__img img {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 992px) {
+  .shirt-3 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    background: #f2f9fd;
+    margin-top: 30px;
+  }
+
+  .ex__block {
+    margin-top: 30px;
+  }
+
+  .shirt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    position: unset;
+    background: #f2f9fd;
+    padding: 43px 14px 0;
+    margin-top: 30px;
+  }
+
+  .shirt__rigth {
+    position: unset;
+    border: none;
+  }
+
+  .shirt__text {
+    position: unset;
+    padding-top: 0;
+    height: auto;
+  }
+
+  .shirt__text h1 {
+    font-size: 25px;
+    color: #333333;
+    margin-top: 41px;
+    margin-bottom: 13px;
+  }
+
+  .shirt__text p {
+    margin-bottom: 25px;
+  }
+
+  .shirt2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: unset;
+    background: #f2f9fd;
+    padding: 43px 14px 0;
+    margin-top: 30px;
+  }
+
+  .shirt__rigth2 {
+    position: unset;
+    border: none;
+  }
+
+  .shirt__text2 {
+    position: unset;
+    padding-top: 0;
+    height: auto;
+  }
+
+  .shirt__text2 h1 {
+    font-size: 25px;
+    color: #333333;
+    margin-top: 41px;
+    margin-bottom: 13px;
+  }
+
+  .shirt__text2 p {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .ex__block {
+    padding: 0 14px;
+    height: 420px;
+  }
+}

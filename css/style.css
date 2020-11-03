@@ -1,0 +1,979 @@
+* {
+  margin: 0;
+  list-style: none;
+}
+
+@font-face {
+  font-family: 'DIN Next LT Pro - Medium Cond';
+  src: url("../fonts/fonts/DINNextLTPro-MediumCond.woff");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/fonts/Roboto-Light.woff");
+}
+.slider-to-top{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  display: none;
+  transition: 0.5s;
+}
+.slider-to-top.stick{
+  display: block;
+}
+.slider-to-top i {
+  font-size: 32px;
+  color: #0089cf;
+  
+}
+.header {
+  position: fixed;
+  width: 100%;
+  background-color: #f2f9fd;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  padding: 20px;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+.header.stick {
+  -webkit-box-shadow: 0px 0px 20px 0px #498aaf;
+          box-shadow: 0px 0px 20px 0px #498aaf;
+}
+
+.header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  padding-top: 100px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 40px 0 20px;
+  width: 100%;
+}
+
+.menu .menu__list-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.menu .menu__list-1 li {
+  margin-left: 39px;
+}
+
+.menu .menu__list-1 li:first-child {
+  margin-left: 0;
+}
+
+.menu .menu__list-1 li a {
+  color: #333333;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu .menu__list-1 li a:hover {
+  color: #0089cf;
+}
+
+.menu .menu__list-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+.menu .menu__list-2 li {
+  margin-left: 39px;
+}
+
+.menu .menu__list-2 li:first-child {
+  margin-left: 0;
+}
+
+.menu .menu__list-2 li a {
+  color: #333333;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  text-transform: uppercase;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.menu .menu__list-2 li a:hover {
+  color: #0089cf;
+}
+
+.menu .menu__list-1 li a {
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.menu .menu__list-1 li a:hover::before {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #0089cf;
+  bottom: -36px;
+}
+
+.menu .menu__list-2 {
+  text-align: end;
+}
+
+.menu .menu__list-2 li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu .menu__list-2 li a p {
+  margin-left: 2px;
+}
+
+.burger__menu {
+  display: none;
+}
+
+.payment__cart {
+  position: fixed;
+  background: white;
+  width: 560px;
+  right: -100%;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  height: 100%;
+  top: 0;
+  z-index: 11;
+  padding: 30px 20px 30px 40px;
+}
+
+.payment__cart.active {
+  right: 0;
+  overflow-y: overlay;
+  overflow-x: hidden;
+}
+
+.payment__cart .burger__menu2 {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  top: 40px;
+  right: 30px;
+}
+.payment__cart form input{
+  width: 100%;
+}
+.payment__cart .burger__menu2::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #0089cf;
+  top: 0;
+}
+
+.payment__cart .burger__menu2::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  height: 3px;
+  background-color: #0089cf;
+  bottom: 0;
+}
+
+.payment__cart .burger__menu2 span {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #0089cf;
+  top: 13px;
+}
+
+.payment__cart .burger__menu2.active::after {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 13px;
+}
+
+.payment__cart .burger__menu2.active::before {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  bottom: 14px;
+}
+
+.payment__cart .burger__menu2.active span {
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+
+.payment__cart h1 {
+  font-family: "DIN Next LT Pro - Medium Cond";
+  text-transform: uppercase;
+  color: #333333;
+  font-size: 35px;
+}
+
+.payment__cart h4 {
+  color: #333333;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.payment__cart .adress {
+  width: 100%;
+}
+
+.payment__cart .note {
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #e4e4e4;
+}
+
+.payment__cart .form-control {
+  padding: 0 0 11px 0;
+  border: none;
+  border-bottom: 2px solid #e4e4e4;
+  font-family: Roboto;
+  font-size: 18px;
+  color: #929292;
+  margin-bottom: 10px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+}
+
+.payment__cart input {
+  padding: 0 0 11px 0;
+  border: none;
+  border-bottom: 2px solid #e4e4e4;
+  font-family: Roboto;
+  color: #cccccc;
+  font-size: 18px;
+  font-weight: 300;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+.paymnet-back {
+  background: #00000044;
+  width: 100%;
+  height: 100%;
+  position: unset;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.paymnet-back.active {
+  position: fixed;
+  display: block;
+}
+
+body.active {
+  overflow: hidden;
+}
+
+.your-cart {
+  background-color: #f2f9fd;
+  width: 100%;
+  padding: 30px 20px 30px 40px;
+  position: absolute;
+  left: 0;
+  height: 100%;
+}
+
+.your-cart .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.your-cart .product .pies {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "DIN Next LTPro - Medium Cond";
+}
+
+.your-cart .product .pies .value-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  font-size: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.your-cart .product .pies .value-button:hover {
+  cursor: pointer;
+}
+
+.your-cart .product .image {
+  width: 100px;
+}
+
+.your-cart .product .product__text h4 {
+  color: #333333;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+
+.your-cart .product .product__text p {
+  font-family: Roboto;
+  color: #666666;
+  font-size: 14px;
+}
+
+.your-cart .product .size__product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.your-cart .product .size__product input[type="number"] ::-webkit-inner-spin-button,
+.your-cart .product .size__product input[type="number"] ::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.your-cart .product .size__product label {
+  color: #333333;
+  font-family: "DIN Next LT Pro - Medium Cond";
+}
+
+.your-cart .product .size__product input {
+  margin-left: 3px;
+  margin-bottom: 0;
+  color: black;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  background-color: #dae0e4;
+  padding: 5px !important;
+}
+
+.your-cart .product .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  color: #333333;
+  font-size: 18px;
+}
+
+.your-cart .product input {
+  margin-bottom: 0;
+  padding: 0 !important;
+  color: black;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  background: transparent;
+}
+
+.your-cart .product input#number {
+  text-align: center;
+  border: none;
+  width: 40px;
+  height: 40px;
+  color: black;
+}
+
+.your-cart .product input[type="number"]::-webkit-inner-spin-button,
+.your-cart .product input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.your-cart .line {
+  width: 100%;
+  height: 2px;
+  background: #cccccc;
+}
+
+.search_body {
+  height: 100vh;
+  position: absolute;
+  background: #f2f9fd;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding-top: 50px;
+}
+.exit{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 36px;
+  cursor: pointer;
+}
+
+.search_body .search-place form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.search_body .search-place form input {
+  width: 90%;
+  border: none;
+  border-bottom: 2px solid #c8ced0;
+  background: transparent;
+  font-size: 30px;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  outline: none;
+  cursor: pointer;
+  color: #0089cf;
+  text-transform: uppercase;
+}
+
+.search_body .search-place form button {
+  width: 10%;
+  border: none;
+  border-bottom: 2px solid #c8ced0;
+  background: transparent;
+  font-size: 30px;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  outline: none;
+  cursor: pointer;
+  color: #0089cf;
+}
+
+.search_body .search-items .blocka {
+  background: white;
+  position: relative;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.search_body .search-items .blocka .shoes {
+  background: white;
+  position: relative;
+  padding: 0 20px 35px 20px;
+  height: 430px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.search_body .search-items .blocka .shoes .shoes__img {
+  height: 241px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.search_body .search-items .blocka .shoes img {
+  width: 100%;
+}
+
+.search_body .search-items .blocka .shoes h4 {
+  color: #666666;
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+.search_body .search-items .blocka .shoes h5 {
+  color: #333333;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 35px;
+  margin-bottom: 13px;
+}
+
+.search_body .search-items .blocka .shoes p {
+  color: #666666;
+  font-family: Roboto;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.search_body .search-items .blocka .shoes .price {
+  color: #333333;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  font-size: 18px;
+}
+
+.search_body .search-items .blocka .shoes .price del {
+  color: #fc7070;
+  margin-left: 10px;
+}
+
+.search_body .search-items .blocka:hover .to__shop {
+  opacity: 1;
+}
+
+.search_body .search-items .blocka .to__shop {
+  position: absolute;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  opacity: 0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  top: 33px;
+  left: 0;
+}
+
+.search_body .search-items .blocka .to__shop button {
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  color: #a0a0a0;
+}
+
+.search_body .search-items .blocka .to__shop button:hover {
+  color: #b4b4b4;
+}
+
+footer {
+  background-color: #0c0d0d;
+  padding: 40px 0;
+  position: relative;
+  margin-top: 100px;
+  z-index: 0;
+}
+
+footer a {
+  color: #666666;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+.footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 18px;
+  font-family: "DIN Next LT Pro - Medium Cond";
+}
+
+.footer__rigth .logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__rigth .logos a {
+  padding: 15px;
+  border: 1px solid #666666;
+}
+
+.footer__rigth input {
+  border: none;
+  border-bottom: 2px solid #242525;
+  background: none;
+  font-family: 'Roboto';
+  padding: 0 107px 16px 10px;
+  margin-top: 20px;
+  outline: none;
+  color: white;
+}
+
+.top__text {
+  text-align: center;
+}
+
+.top__text h1 {
+  font-family: "DIN Next LT Pro - Medium Cond";
+  color: #333333;
+  font-size: 45px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  background: url(..//images/top-text.png) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top__text p {
+  color: #0089cf;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  text-transform: uppercase;
+}
+@media(min-width:1200){
+  .shirt__rigth {
+    position: absolute;
+    width: 100%;
+    vertical-align: middle;
+    right: -104%;
+    overflow: hidden;
+    border: 10px solid #f2f9fd;
+}
+}
+@media (max-width: 991px) {
+  .menu__list-1 li a {
+    font-size: 18px;
+  }
+
+  .menu__list-2 {
+    text-align: end;
+  }
+
+  .menu__list-2 li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 22px;
+  }
+
+  .menu__list-2 li a p {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .burger__menu {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 30px;
+  }
+
+  .burger__menu::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #0089cf;
+    top: 0;
+  }
+
+  .burger__menu::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    height: 3px;
+    background-color: #0089cf;
+    bottom: 0;
+  }
+
+  .burger__menu span {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #0089cf;
+    top: 13px;
+  }
+
+  .burger__menu.active::after {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 13px;
+  }
+
+  .burger__menu.active::before {
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: 14px;
+  }
+
+  .burger__menu.active span {
+    -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+            transform: scale(0);
+  }
+
+  .menu .menu__list-1 li {
+    margin-left: 0px;
+  }
+
+  .menu__list-1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+  }
+
+  .menu__list-1 li {
+    margin-bottom: 30px;
+    margin-left: 0;
+  }
+
+  .menu__list-1 li a {
+    font-size: 26px;
+  }
+
+  .menu__list-1 li a:hover::before {
+    display: none;
+  }
+
+  .menu__list-2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+  }
+
+  .menu__list-2 li {
+    margin-left: 20px;
+  }
+
+  .menu__list-2 li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 22px;
+  }
+
+  .menu__list-2 li a p {
+    display: none;
+  }
+
+  .menu {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    text-align: start;
+    background: #84dfd3;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .menu.active {
+    left: 0;
+    width: 100%;
+  }
+
+  .header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 0;
+  }
+
+  .header__body {
+    padding: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .payment__cart {
+    width: 100%;
+  }
+}
+
+@media (max-width: 547px) {
+  .search_body .search-items .blocka .shoes {
+    height: 350px;
+  }
+
+  .search_body .search-items .blocka .shoes .shoes__img {
+    height: 160px;
+  }
+}
+
+@media (max-width: 540px) {
+  .your-cart .product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+
+  .your-cart .product .image {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 100%;
+  }
+
+  .your-cart .product .product__text {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 100%;
+  }
+
+  .your-cart .product .product__text h4 {
+    font-size: 26px;
+  }
+
+  .your-cart .product .product__text p {
+    font-size: 20px;
+  }
+
+  .your-cart .product .price {
+    font-size: 26px;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 100%;
+  }
+
+  .your-cart .product .size__product {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    width: 100%;
+  }
+
+  .your-cart .product .size__product label {
+    font-size: 24px;
+  }
+
+  .your-cart .product .size__product label input {
+    font-size: 26px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .your-cart .product .pies {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .your-cart .product .pies .value-button {
+    font-size: 50px;
+    border: 1px solid #cccccc;
+  }
+
+  .your-cart .product .pies input {
+    font-size: 26px;
+  }
+}

@@ -1,0 +1,308 @@
+body {
+  background-color: #f2f9fd;
+}
+
+.top__text {
+  text-align: center;
+}
+
+.top__text h1 {
+  font-family: "DIN Next LT Pro - Medium Cond";
+  color: #333333;
+  font-size: 45px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 2;
+  background: url(..//images/top-text.png) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.top__text p {
+  color: #0089cf;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  text-transform: uppercase;
+}
+
+.footwear a {
+  text-decoration: none;
+}
+
+.footwear .blocka {
+  position: relative;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.footwear .blocka:hover .to__shop {
+  opacity: 1;
+}
+
+.footwear .blocka .to__shop {
+  width: 100%;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  opacity: 0;
+}
+
+.footwear .blocka .to__shop button {
+  border: none;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  color: #a0a0a0;
+}
+
+.footwear .blocka .to__shop button:hover {
+  color: #b4b4b4;
+}
+
+.footwear .news {
+  border-radius: 10px;
+  background-color: #83d78c;
+  width: 60px;
+  height: 20px;
+  position: absolute;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 33px;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  color: white !important;
+  left: 20px;
+}
+
+.footwear .shoes {
+  background: white;
+  position: relative;
+  padding: 0 20px 35px 20px;
+  height: 430px;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footwear .shoes .shoes__img {
+  height: 241px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.footwear .shoes img {
+  width: 100%;
+}
+
+.footwear .shoes h4 {
+  color: #666666;
+  font-family: Roboto;
+  font-size: 14px;
+}
+
+.footwear .shoes h5 {
+  color: #333333;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 35px;
+  margin-bottom: 13px;
+}
+
+.footwear .shoes p {
+  color: #666666;
+  font-family: Roboto;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.footwear .shoes .price {
+  color: #333333;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  font-size: 18px;
+}
+
+.footwear .shoes .price del {
+  color: #fc7070;
+  margin-left: 10px;
+}
+
+.footwear .shoes__rigth {
+  text-align: start;
+  width: 40%;
+}
+
+.footwear .shoes-bg {
+  background: url(../images/product/shoe-12-bg.png) center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 35px;
+}
+
+.footwear .shoes-bg h5 {
+  color: #ffffff;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  text-transform: uppercase;
+}
+
+.footwear .shoes-bg h1 {
+  color: #ffffff;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  font-size: 55px;
+  text-transform: uppercase;
+}
+
+.footwear .shoes4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footwear .shoes4 .shoes__img {
+  height: 241px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footwear .to__shop {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  top: 33px;
+  width: 85%;
+  left: 0;
+}
+
+.footwear .to__shop a {
+  color: #a0a0a0;
+  padding: 5px 0;
+}
+
+.footwear .to__shop .exclusive {
+  font-family: "DIN Next LT Pro - Medium Cond";
+  color: white;
+  padding: 5px 14px;
+  font-size: 18px;
+  background-color: #0089cf;
+  border-radius: 10px;
+}
+
+.footwear .to__shop2 {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+@media (max-width: 1200px) {
+  .footwear .shoes4 .shoes__rigth {
+    width: 70%;
+  }
+
+  .footwear .shoes .shoes__img {
+    height: 241px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 991px) {
+  .footwear .to__shop {
+    top: 10px;
+  }
+
+  .footwear .shoes {
+    padding: 0 20px 0px 20px;
+    margin-top: 50px;
+    height: 380px;
+  }
+
+  .footwear .shoes h5 {
+    margin-bottom: 5px;
+  }
+
+  .footwear .shoes p {
+    margin-bottom: 5px;
+  }
+
+  .footwear .shoes4 {
+    display: block;
+  }
+
+  .shoes-rigth-p {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .footwear .shoes4 .shoes__rigth {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footwear .shoes {
+    height: 330px;
+    padding: 50px 5px 0px 5px;
+  }
+
+  .footwear .shoes .shoes__img {
+    height: 155px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+}
+
+@media (max-width: 390px) {
+  .footwear .to__shop {
+    width: 95%;
+  }
+
+  .footwear .shoes {
+    height: 280px;
+    padding: 0px 5px 0px 5px;
+  }
+
+  .footwear .shoes h5 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 364px) {
+  .footwear .shoes p {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,322 @@
+.card {
+  padding: 50px 0;
+}
+
+.card-pro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-pro img {
+  width: 100%;
+}
+
+.card-text .like {
+  padding: 15px;
+  border: 1px solid #e9e9e9;
+  color: #e9e9e9;
+  background: none;
+  font-size: 22px;
+  outline: none;
+}
+
+.card-text .like.active {
+  color: red;
+  background: rgba(255, 0, 0, 0.466);
+}
+
+.card-text h3 {
+  color: #333333;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-top: 43px;
+  margin-bottom: 16px;
+}
+
+.card-text h1 {
+  color: #333333;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.card-text .price {
+  color: #666666;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.card-text .card-in-span {
+  color: #666666;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.card-text .card-in-span span {
+  color: #068cd0;
+}
+
+.card-text .img-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.card-text .img-block .img-content {
+  cursor: pointer;
+  width: 29%;
+  background: #f5f5f5;
+  padding: 10px;
+}
+
+.card-text .img-block .img-content img {
+  width: 100%;
+}
+
+.card-text .size {
+  color: #666666;
+  font-family: Roboto;
+  margin-bottom: 15px;
+}
+
+.card-text .size-to-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-text .size-to-card select {
+  width: 47%;
+  padding: 20px;
+  font-size: 22px;
+  color: #333333;
+  border: 1px solid #e4e4e4;
+}
+
+.card-text .size-to-card button {
+  cursor: pointer;
+  width: 47%;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  font-size: 22px;
+  color: #ffffff;
+  background-color: #333333;
+  border: none;
+}
+
+.img-magnifier-container {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  border: 3px solid #000;
+  border-radius: 50%;
+  cursor: none;
+  width: 100%;
+}
+
+.modern {
+  background: url(../images/card-sec-bg.jpg) center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 250px 0;
+}
+
+.modern .modern-text h1 {
+  font-family: "DIN Next LT Pro - Medium Cond";
+  font-size: 25px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 400;
+}
+
+.modern .modern-text p {
+  font-family: Roboto;
+  color: #ffffff;
+  font-weight: 300;
+}
+
+.card-info {
+  padding: 50px 0;
+}
+
+.card-info .size-to-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-info .size-to-card select {
+  width: 47%;
+  padding: 10px 15px;
+  font-size: 14px;
+  color: #333333;
+  border: 1px solid #e4e4e4;
+}
+
+.card-info .size-to-card button {
+  cursor: pointer;
+  width: 47%;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #333333;
+  border: none;
+}
+
+.card-info .info__text h5 {
+  font-family: "DIN Next LT Pro - Medium Cond";
+  color: #666666;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 9px;
+}
+
+.card-info .info__text h1 {
+  color: #333333;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  font-size: 25px;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.card-info .info__text p {
+  color: #666666;
+  font-family: Roboto;
+  font-size: 14px;
+  margin-bottom: 46px;
+}
+
+.card-info .info__text h3 {
+  color: #666666;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.card-info .info__text h2 {
+  font-family: "DIN Next LT Pro - Medium Cond";
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 11px;
+}
+
+.card-info .info__text .for_to {
+  color: #333333;
+  font-family: Roboto;
+  margin-bottom: 10px;
+}
+
+.card-info .info__card {
+  border: 4px solid #e4e4e4;
+  background: white;
+  padding: 25px 30px;
+}
+
+.card-info .info__card h2 {
+  font-family: "DIN Next LT Pro - Medium Cond";
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+.card-info .info__card p {
+  color: #666666;
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-size: 14px;
+  margin: 14px 0 19px 0;
+}
+
+.card-info .info__card h3 {
+  color: #0089cf;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.card-info .info__card .card-from {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card-info .info__card .card-from p {
+  color: #333333;
+  font-family: "DIN Next LT Pro - Medium Cond";
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.card-info .info__card .card-from .price {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.card-info .info__img {
+  position: relative;
+}
+
+.card-info .info__img img {
+  position: absolute;
+  left: -100px;
+}
+
+.social {
+  padding: 50px 0px;
+}
+
+.social .socila__text h3 {
+  font-family: "DIN Next LT Pro - Medium Cond";
+  color: #666666;
+  font-size: 14px;
+}
+
+.social .socila__text h1 {
+  font-family: "DIN Next LT Pro - Medium Cond";
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.social .airmax-image {
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.social .airmax-image img {
+  opacity: 0.4;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.social .airmax-image img:hover {
+  opacity: 1;
+}
+
+@media (max-width: 1200px) {
+  .col-2-info {
+    display: none;
+  }
+}

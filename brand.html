@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/brand.css">
+    <link rel="shortcut icon" href="images/logo.jpg" type="image/x-icon">
+</head>
+<body>
+
+    <header class="header">
+  <div class="header__container">
+      <div class="header__body">
+          <a href="index.html" class="logo"><img src="images/logo.jpg" alt=""></a>
+          <nav class="menu">
+              <ul class="menu__list-1">
+                  <li><a href="index.html">Footwear</a></li>
+                  <li><a href="brand.html">Brands</a></li>
+                  <li><a href="clear.html">Clearance</a></li>
+              </ul>
+              <ul class="menu__list-2">
+                  <li><a class="search" href="#"><i class="fa fa-search"></i><p>Search</p></a></li>
+                  <li><a class="cart" href="#"><i class="fa fa-shopping-bag"></i><p>Cart(<span value="0">0</span>)</p></a></li>
+                  <li><a href="#"><i class="fa fa-user"></i><p>Sign in</p></a></li>
+              </ul>
+          </nav>
+          <div class="burger__menu">
+              <span></span>
+          </div>
+          <div class="payment__cart">
+              <h1>Informations</h1>
+              <h4>Personnal informations</h4>
+              <div class="burger__menu2">
+                <span></span>
+            </div>
+              <form action="">
+                  <select class="form-control" type="text">
+                  <option value="USA">USA</option>
+                  <option value="UK">UK</option>
+                  <option value="RUSSIA">RUSSIA</option>
+                  <option value="UZBEKISTAN">UZBEKISTAN</option>
+              </select>
+            <div class="row">
+                <div class="col-lg-6">
+                    <input type="text" placeholder="First name">
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="Second name">
+                </div>
+                <div class="col-lg-12">
+                    <input type="text" class="adress" placeholder="Adress">
+                </div>
+                <div class="col-lg-6">
+                    <input type="number" placeholder="Postal code">
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" placeholder="City">
+                </div>
+                <div class="col-lg-6">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="col-lg-6">
+                    <input type="number" placeholder="Phone">
+                </div>
+                <div class="col-lg-12">
+                    <h4>NOTES</h4>
+                    <textarea class="note" placeholder="Note"></textarea>
+                </div>
+            </div>
+            
+             <div class="your-cart">
+                 <h4>YOUR CART</h4>
+                 <div class="line"></div>
+                 <div class="product">
+                     <div class="pies">
+                         <div class="value-button" id="increase" onclick="increaseValue()">+</div>
+                         <input type="number" id="number" value="0">
+                         <div class="value-button" id="decrease" onclick="decreaseValue()">-</div>
+                     </div>
+                     <div class="image">
+                         <img width="100%" src="images/product/ex-7.png" alt="">
+                     </div>
+                     <div class="product__text">
+                         <h4>Comme des Garçons Play</h4>
+                         <p>Rod Laver Vintage - exclusive</p>
+                     </div>
+                     <div class="size__product">
+                         <label>SIZE <input type="number" min="7.5" max="11.5" value="7.5"></label>
+                     </div>
+                     <div class="price">
+                         <span>$ 105.00</span>
+                     </div>
+                 </div>
+             </div>
+             
+              </form>
+              
+          </div>
+          <div class="paymnet-back"></div>
+      </div>
+      <div class="search_body">
+        <div class="exit"><i class="fa fa-times-circle-o"></i></div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-lg-12">
+                      <div class="search-place">
+                          <form action="">
+                              <input placeholder="Search" type="search">
+                              <button type="submit"><i class="fa fa-search"></i></button>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="col-lg-12">
+                      <div class="search-items">
+                          <div class="row">
+                              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                <div class="blocka">
+                                    <a class="shoes-a" href="card.html">
+                                        <div class="shoes">
+                                            <div class="shoes__img">
+                                                <img src="images/product/pro-1.png" alt="">
+                                            </div>
+                                            <h5>Supreme x Nike SB</h5>
+                                            <p>Tennis Classic</p>
+                                            <p class="price">$120.00<del>$160.00</del></p>
+                                        </div>
+                                    </a>
+                                    <div class="to__shop">
+                                        <button class="like"><i class="fa fa-heart"></i></button>
+                                        <button class="to-cart"><i class="fa fa-shopping-bag"></i></button>
+                                    </div>
+                                    
+                                </div>
+                              </div>
+                              <div class="col-lg-3 col-md-6 col-sm-6 col-12">
+                                <div class="blocka">
+                                    <a class="shoes-a" href="card.html">
+                                        <div class="shoes">
+                                            <div class="shoes__img">
+                                                <img src="images/product/pro-1.png" alt="">
+                                            </div>
+                                            <h5>Supreme x Nike SB</h5>
+                                            <p>Tennis Classic</p>
+                                            <p class="price">$120.00<del>$160.00</del></p>
+                                        </div>
+                                    </a>
+                                    <div class="to__shop">
+                                        <button class="like"><i class="fa fa-heart"></i></button>
+                                        <button class="to-cart"><i class="fa fa-shopping-bag"></i></button>
+                                    </div>
+                                    
+                                </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</header>
+    <section class="exclusive">
+        <div class="container">
+            <div class="row justify-content-center">
+                    <div class="top__text">
+                        <h1>Exclusive</h1>
+                        <p>38 Products</p>
+                    </div>
+            </div>
+            <div class="row ex-row">
+                <div class="col-lg-12 col-md-6 col-sm-6 col-12 justify-content-center d-flex">
+                    <div class="shirt-3">
+                        <div class="shirt__text">
+                            <h1>KITH</h1>
+                            <p>Vertical Logo Tee - White / Navy</p>
+                            <p class="price">$45.00</p>
+                        </div>
+                        <div class="shirt__img">
+                            <img src="images/product/ex-1.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 ">
+                    <div class="ex__block">
+                        <div class="shoes__img">
+                            <img src="images/product/ex-2.png" alt="">
+                        </div>
+                        <h5>Lanvin</h5>
+                        <p>Purple Metallic High-Top</p>
+                        <p class="price">$700.00</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 ">
+                    <div class="shirt">
+                        <div class="shirt__text">
+                        <h1>Stampd</h1>
+                        <p>Classics Astor MA-1 Jacket - Burgundy</p>
+                        <p class="price">$220.00</p>
+                    </div>
+                    <div class="shirt__rigth">
+                        <img src="images/product/red.png" alt="">
+                    </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-12 col-md-6 col-sm-6 col-12 justify-content-center d-flex">
+                    <div class="shirt-3">
+                        <div class="shirt__text">
+                            <h1>KITH</h1>
+                            <p>Just Don All Star Varsity Jacket - Grey</p>
+                            <p class="price">$1,200.00</p>
+                        </div>
+                        <div class="shirt__img">
+                            <img src="images/product/ex-5.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 ">
+                    <div class="shirt2">
+                        <div class="shirt__rigth2">
+                        <img src="images/product/red-2.png" alt="">
+                    </div>
+                        
+                        <div class="shirt__text2">
+                          <h1>Stampd</h1>
+                          <p>Classics Astor MA-1 Jacket -   Burgundy</p>
+                          <p class="price">$220.00</p>
+                        </div>
+                    
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 ">
+                    <div class="ex__block">
+                        <div class="shoes__img">
+                            <img src="images/product/ex-7.png" alt="">
+                        </div>
+                        <h5>Lanvin</h5>
+                        <p>Purple Metallic High-Top</p>
+                        <p class="price">$700.00</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-md-6 col-sm-6 col-12 justify-content-center d-flex">
+                    <div class="shirt-3">
+                        <div class="shirt__text">
+                            <h1>KITH <br>
+                                x <br>
+                                Ones Stroke Ueno</h1>
+                            <p>Distressed Denim Pant - Black</p>
+                            <p class="price">$275.00</p>
+                        </div>
+                        <div class="shirt__img">
+                            <img src="images/product/ex-5.png" alt="">
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 ">
+                    <div class="ex__block">
+                        <div class="shoes__img">
+                            <img src="images/product/ex-7.png" alt="">
+                        </div>
+                        <h5>Raf Simons</h5>
+                        <p>Black Leather Heel Pocket High-Top</p>
+                        <p class="price">$700.00</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-12 ">
+                    <div class="shirt">
+                        <div class="shirt__text">
+                        <h1>Supreme</h1>
+                        <p>Child of hell Beanie</p>
+                        <p class="price">$40.00</p>
+                    </div>
+                    <div class="shirt__rigth">
+                        <img src="images/product/red.png" alt="">
+                    </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-lg-1 col-md-1">
+                <img src="../images/logo.jpg" alt="">
+            </div>
+            <div class="col-lg-5 col-md-5">
+                <div class="footer__menu">
+                    <div class="footer__menu-left">
+                        <ul>
+                            <li><a href="#">Footwear</a></li>
+                            <li><a href="#">clothing</a></li>
+                            <li><a href="#">accessories</a></li>
+                            <li><a href="#">brands</a></li>
+                            <li><a href="#">clearance</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-left">
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Store locator</a></li>
+                            <li><a href="#">Press room</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__menu-left">
+                        <ul>
+                            <li><a href="#">Website Terms</a></li>
+                            <li><a href="#">Select Country</a></li>
+                            <li><a href="#">Source Code</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3">
+                <div class="footer__rigth">
+                    <div class="logos">
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                    </div>
+                    <input type="text" placeholder="Suscribe our newsletter...">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="js/modernizr.custom.17475.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.elastislide.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
